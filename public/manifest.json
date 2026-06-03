@@ -1,0 +1,30 @@
+{
+  "name": "Angel AI: Companion",
+  "short_name": "Angel AI",
+  "description": "Chat-based companion PWA with proactive check-ins, long-term memory, and astral-inspired guidance.",
+  "start_url": "/chat",
+  "id": "/chat",
+  "display": "standalone",
+  "background_color": "#0F1629",
+  "theme_color": "#0F1629",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

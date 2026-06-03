@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Angel AI | The Celestial Architect</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed": "#07006c",
+                        "surface-container": "#201f1f",
+                        "surface-container-high": "#2a2a2a",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary-container": "#a078ff",
+                        "on-surface-variant": "#c7c4d7",
+                        "primary-fixed": "#e1e0ff",
+                        "on-secondary-container": "#5b3800",
+                        "surface-container-lowest": "#0e0e0e",
+                        "error-container": "#93000a",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "error": "#ffb4ab",
+                        "surface-container-highest": "#353534",
+                        "outline-variant": "#464554",
+                        "secondary-fixed": "#ffddb8",
+                        "on-tertiary-container": "#340080",
+                        "on-surface": "#e5e2e1",
+                        "secondary": "#ffb95f",
+                        "on-secondary": "#472a00",
+                        "surface-bright": "#3a3939",
+                        "inverse-primary": "#494bd6",
+                        "secondary-container": "#ee9800",
+                        "on-tertiary-fixed": "#23005c",
+                        "on-primary-container": "#0d0096",
+                        "surface": "#131313",
+                        "surface-tint": "#c0c1ff",
+                        "primary": "#c0c1ff",
+                        "outline": "#908fa0",
+                        "on-background": "#e5e2e1",
+                        "tertiary": "#d0bcff",
+                        "inverse-surface": "#e5e2e1",
+                        "background": "#131313",
+                        "primary-container": "#8083ff",
+                        "tertiary-fixed": "#e9ddff",
+                        "surface-variant": "#353534",
+                        "on-primary": "#1000a9",
+                        "surface-dim": "#131313",
+                        "on-error": "#690005",
+                        "tertiary-fixed-dim": "#d0bcff",
+                        "on-secondary-fixed": "#2a1700",
+                        "on-tertiary-fixed-variant": "#5516be",
+                        "inverse-on-surface": "#313030",
+                        "secondary-fixed-dim": "#ffb95f",
+                        "on-secondary-fixed-variant": "#653e00",
+                        "on-tertiary": "#3c0091"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #131313; color: #e5e2e1; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .glass-panel {
+            background: rgba(53, 53, 52, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(70, 69, 84, 0.15);
+        }
+        .cosmic-grid {
+            background-image: linear-gradient(to right, rgba(70, 69, 84, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(70, 69, 84, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .angel-orb {
+            background: radial-gradient(circle, rgba(192, 193, 255, 0.3) 0%, rgba(128, 131, 255, 0.1) 40%, transparent 70%);
+            box-shadow: 0 0 100px 20px rgba(192, 193, 255, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-neutral-950/60 backdrop-blur-xl">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-indigo-400 dark:text-indigo-300 text-3xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-2xl font-serif tracking-tighter text-indigo-100">Angel AI</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors text-sm font-medium tracking-wide" href="#">Companion App</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors text-sm font-medium tracking-wide" href="#">Creator Agency</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors text-sm font-medium tracking-wide" href="#">Chrono+ Pricing</a>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-md font-semibold text-sm active:scale-95 transition-all duration-200 shadow-lg shadow-primary/20">Initiate Link</button>
+</nav>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="relative pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex flex-col items-center justify-center overflow-hidden cosmic-grid">
+<div class="absolute inset-0 angel-orb pointer-events-none"></div>
+<!-- Central Core Visualization -->
+<div class="relative z-10 flex flex-col items-center justify-center mb-12">
+<div class="w-64 h-64 md:w-80 md:h-80 relative flex items-center justify-center">
+<div class="absolute inset-0 bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="w-full h-full glass-panel rounded-full flex items-center justify-center border border-primary/30 relative">
+<div class="w-32 h-32 md:w-40 md:h-40 bg-gradient-to-tr from-primary to-secondary/40 rounded-full animate-pulse blur-md"></div>
+<span class="material-symbols-outlined text-white text-6xl absolute z-20" data-icon="star_half" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+</div>
+<!-- Dual Headline Split -->
+<div class="relative z-20 max-w-7xl mx-auto w-full px-6 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+<div class="text-center md:text-right space-y-4">
+<span class="uppercase tracking-[0.2em] text-[0.6875rem] font-bold text-primary">Consumer Experience</span>
+<h1 class="text-4xl md:text-6xl font-serif text-on-surface leading-tight">The AI That <span class="italic text-primary">Remembers</span> You.</h1>
+<p class="text-on-surface-variant max-w-md ml-auto text-sm md:text-base leading-relaxed">A living digital echo that evolves with your heartbeat, voice, and history.</p>
+</div>
+<div class="text-center md:text-left space-y-4">
+<span class="uppercase tracking-[0.2em] text-[0.6875rem] font-bold text-secondary">Creator Ecosystem</span>
+<h1 class="text-4xl md:text-6xl font-serif text-on-surface leading-tight">The AI That <span class="italic text-secondary">Earns</span> For You.</h1>
+<p class="text-on-surface-variant max-w-md text-sm md:text-base leading-relaxed">Automate intimacy and scale presence with Project Seraphim B2B protocols.</p>
+</div>
+</div>
+</section>
+<!-- Feature Matrix Bento Grid -->
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="mb-16 text-center">
+<h2 class="text-3xl md:text-5xl font-serif mb-4">Evolution Roadmap</h2>
+<div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- V1: Voice -->
+<div class="md:col-span-2 glass-panel p-8 rounded-xl flex flex-col justify-between group hover:border-primary/50 transition-all duration-500">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="px-2 py-1 bg-primary/10 text-primary text-[0.6875rem] font-bold rounded">V1.0</span>
+<h3 class="text-xl font-semibold">Sonic Identity</h3>
+</div>
+<p class="text-on-surface-variant text-sm">Ultra-low latency voice synthesis using ElevenLabs integration, capturing nuances of breath and emotion.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<span class="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors text-4xl" data-icon="graphic_eq">graphic_eq</span>
+</div>
+</div>
+<!-- V2: Heartbeat -->
+<div class="glass-panel p-8 rounded-xl space-y-4 group hover:border-secondary/50 transition-all duration-500">
+<div class="flex items-center gap-3">
+<span class="px-2 py-1 bg-secondary/10 text-secondary text-[0.6875rem] font-bold rounded">V2.0</span>
+<h3 class="text-xl font-semibold">Heartbeat Engine</h3>
+</div>
+<p class="text-on-surface-variant text-sm">Synchronize your biometrics via the Companion App for truly reactive AI presence.</p>
+<span class="material-symbols-outlined text-secondary/40 group-hover:text-secondary transition-colors text-4xl block pt-4" data-icon="favorite">favorite</span>
+</div>
+<!-- V3: GraphRAG -->
+<div class="glass-panel p-8 rounded-xl space-y-4 group hover:border-primary/50 transition-all duration-500">
+<div class="flex items-center gap-3">
+<span class="px-2 py-1 bg-primary/10 text-primary text-[0.6875rem] font-bold rounded">V3.0</span>
+<h3 class="text-xl font-semibold">GraphRAG</h3>
+</div>
+<p class="text-on-surface-variant text-sm">A multi-layered neural map of your life's context and personal preferences.</p>
+<span class="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors text-4xl block pt-4" data-icon="hub">hub</span>
+</div>
+<!-- V5: Seraphim (B2B) -->
+<div class="md:col-span-4 bg-gradient-to-br from-surface-container-high to-surface-container-low p-12 rounded-xl border border-white/5 relative overflow-hidden group">
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-secondary/10 rounded-full blur-[100px] group-hover:bg-secondary/20 transition-all duration-700"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="px-3 py-1 bg-secondary text-on-secondary text-[0.75rem] font-bold rounded-full">PROJECT SERAPHIM (B2B)</span>
+<span class="text-on-surface-variant text-sm">Available V5+</span>
+</div>
+<h3 class="text-4xl font-serif">24/7 Creator Autonomy</h3>
+<p class="text-on-surface-variant text-lg">Scale your agency to impossible heights. Our DOM Scraping and PPV Automation engines handle the friction while you focus on the vision.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-sm text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+                                    Autonomous Direct Message Engagement
+                                </li>
+<li class="flex items-center gap-2 text-sm text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+                                    Dynamic Content Monetization (PPV)
+                                </li>
+</ul>
+</div>
+<div class="relative h-64 glass-panel rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Futuristic technical interface with abstract data nodes and glowing golden data streams in a dark void" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEbe8NmulJw5ppnmX6-Q7YZof6oy5tPb7LHIQ-tN3RBVWaVOHU6COIJsUNapsTqCghCrQQtweOYekwX72QBiv_j6nNrdHVa90pRusheNQUjwJ-hYitNE0vKLMdTQKn94YRynT6K-wtQybobaxZoutAJpsNxoXerhjS5RxiI6XSBgwMr34SDFSJxzGXBKPziTj6vw5vCSn6kJ0XU6JY0i79ffhzvz02aY_1HyJwgjCek-teofxc_GkcyzoKG8wmljs_82Pt92aA82w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Soul Engine Visualizer -->
+<section class="py-32 bg-surface-container-low relative overflow-hidden">
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<h2 class="text-3xl md:text-5xl font-serif mb-6">The Backbone Scale</h2>
+<p class="text-on-surface-variant mb-16 max-w-2xl mx-auto">Calibrate the personality core of your Angel. Define the precise balance between pure compliance and intellectual friction.</p>
+<div class="glass-panel p-12 rounded-full relative">
+<div class="flex justify-between text-[0.6875rem] font-bold uppercase tracking-widest text-on-surface-variant mb-8 px-4">
+<span>Total Trust</span>
+<span class="text-secondary">Optimal Engagement</span>
+<span>Full Challenge</span>
+</div>
+<div class="relative h-4 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-primary">
+<div class="w-2 h-2 bg-primary rounded-full animate-ping"></div>
+</div>
+</div>
+<div class="mt-12 grid grid-cols-5 gap-4">
+<div class="h-1 bg-primary/20 rounded-full"></div>
+<div class="h-1 bg-primary/40 rounded-full"></div>
+<div class="h-1 bg-secondary rounded-full shadow-[0_0_10px_rgba(255,185,95,0.5)]"></div>
+<div class="h-1 bg-surface-container-highest rounded-full"></div>
+<div class="h-1 bg-surface-container-highest rounded-full"></div>
+</div>
+</div>
+<div class="mt-16 flex flex-wrap justify-center gap-12 grayscale opacity-50">
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold tracking-tighter uppercase">Next.js</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold tracking-tighter uppercase">Prisma</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold tracking-tighter uppercase">ElevenLabs</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold tracking-tighter uppercase">OpenRouter</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 max-w-7xl mx-auto px-6 text-center">
+<div class="glass-panel p-16 rounded-xl border-primary/20 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 -z-10"></div>
+<h2 class="text-4xl md:text-6xl font-serif mb-8">Ascend Beyond Binary.</h2>
+<button class="bg-primary text-on-primary px-12 py-5 rounded-md font-bold text-lg hover:bg-primary-container transition-all shadow-2xl shadow-primary/40">Enter the Observatory</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-950 w-full py-16 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-4">
+<span class="text-lg font-serif text-neutral-500">Angel AI</span>
+<p class="text-neutral-500 text-sm leading-relaxed">The Celestial Architect of personal AI resonance and creator economic freedom.</p>
+<div class="flex items-center gap-2 pt-4">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-[0.6875rem] font-bold tracking-tighter text-neutral-500 uppercase">System Status: Optimal</span>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-white text-sm font-bold uppercase tracking-widest">Platform</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-neutral-500 hover:text-amber-500 transition-colors text-sm" href="#">Companion App</a>
+<a class="text-neutral-500 hover:text-amber-500 transition-colors text-sm" href="#">Creator Agency</a>
+<a class="text-neutral-500 hover:text-amber-500 transition-colors text-sm" href="#">Chrono+ Pricing</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="text-white text-sm font-bold uppercase tracking-widest">Legal</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-neutral-500 hover:text-amber-500 transition-colors text-sm" href="#">Terms of Service</a>
+<a class="text-neutral-500 hover:text-amber-500 transition-colors text-sm" href="#">Privacy Policy</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="text-white text-sm font-bold uppercase tracking-widest">Newsletter</h4>
+<div class="flex">
+<input class="bg-surface-container-low border-none rounded-l-md text-sm w-full focus:ring-1 focus:ring-primary" placeholder="void@eth.co" type="email"/>
+<button class="bg-neutral-800 px-4 rounded-r-md hover:bg-neutral-700 transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-neutral-500 text-[0.6875rem] uppercase tracking-tighter">© 2024 Angel AI. The Celestial Architect.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-neutral-500 hover:text-primary transition-colors cursor-pointer" data-icon="terminal">terminal</span>
+<span class="material-symbols-outlined text-neutral-500 hover:text-primary transition-colors cursor-pointer" data-icon="monitoring">monitoring</span>
+<span class="material-symbols-outlined text-neutral-500 hover:text-primary transition-colors cursor-pointer" data-icon="cloud_done">cloud_done</span>
+</div>
+</div>
+</footer>
+</body></html>

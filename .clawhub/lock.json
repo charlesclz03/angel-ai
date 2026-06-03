@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "crewai": {
+      "version": "1.0.0",
+      "installedAt": 1775188701760
+    },
+    "frontend-design-3": {
+      "version": "0.1.0",
+      "installedAt": 1775188703198
+    },
+    "chatbot-builder": {
+      "version": "1.0.0",
+      "installedAt": 1775188704648
+    }
+  }
+}

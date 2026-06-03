@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ai.angel.app",
+      "sha256_cert_fingerprints": [
+        "FA:2A:03:CB:38:9C:F3:CE:28:B1:A9:7C:AF:09:A6:DB:9C:12:F3:8B:0C:6D:FE:14:4E:9F:7C:3A:D8:1A:E5:9C"
+      ]
+    }
+  }
+]

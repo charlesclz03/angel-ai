@@ -1,0 +1,43 @@
+name: Status Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * 1'
+
+jobs:
+  verification-summary:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npm run type-check
+
+      - name: Test
+        run: npm test
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Write summary
+        run: |
+          echo "## Angel AI status report" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Verification suite: passed" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Docs hub: \`docs/README.md\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Execution brief: \`docs/angel-ai-next-session-handoff-2026-03-24.md\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Immediate backlog: \`docs/angel-ai-next-steps.md\`" >> "$GITHUB_STEP_SUMMARY"
