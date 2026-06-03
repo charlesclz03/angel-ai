@@ -24,7 +24,7 @@
   "crons": [
     {
       "path": "/api/cron/send-touchpoints",
-      "schedule": "* * * * *"
+      "schedule": "0 9 * * *"
     }
   ]
 }
